@@ -24,6 +24,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
+    "url": "200.html",
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
     "url": "android-chrome-192x192.0fcebb82.png",
     "revision": "71c32dc8b4da4840d61a1796a2bc230b"
   },
@@ -56,12 +60,20 @@ self.__precacheManifest = [
     "revision": "fdaad1887614bbc6822d8a5abb2234ff"
   },
   {
+    "url": "confidentialite.62c48883.css",
+    "revision": "164b9bfed76a1f6f3c8fa554d21ad970"
+  },
+  {
     "url": "confidentialite.daef9682.css",
     "revision": "9caf330c4bbb593fbc8d2eb58a9e085c"
   },
   {
+    "url": "confidentialite.e585336b.js",
+    "revision": "a2b7d2d558ae4355dd8ac3c0703e8b1d"
+  },
+  {
     "url": "confidentialite.html",
-    "revision": "4bce5357393a4b0e58eee0842ffa7e8d"
+    "revision": "ef247d29ef7a7997b561fea1c9e2f10d"
   },
   {
     "url": "favicon-16x16.a4687270.png",
@@ -73,7 +85,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "8ba23533431c6e686ffbf81fb2f7b968"
+    "revision": "183da8e76d9af5f3dcb3c7c605bd316e"
   },
   {
     "url": "logo_dnum_dark.0fe33c5b.svg",
@@ -84,12 +96,20 @@ self.__precacheManifest = [
     "revision": "3a41bfa41e4671414da29db168c37d66"
   },
   {
-    "url": "main.46abc703.js",
-    "revision": "0a91735ebd12b37d0d43cc2fe59a131b"
+    "url": "main.35fb028f.js",
+    "revision": "0c266e7e67de867e03f76761270de1d9"
+  },
+  {
+    "url": "main.62c48883.css",
+    "revision": "4c14dde8937e542cbe9843819830cc47"
   },
   {
     "url": "main.daef9682.css",
     "revision": "7d236ed06e460d3f2096e07384bbc079"
+  },
+  {
+    "url": "main.e66d3374.js",
+    "revision": "a1b1f6031a7ce997db59dc775bc42961"
   },
   {
     "url": "marianne-bold-webfont.1505950c.woff2",
@@ -121,9 +141,9 @@ self.__precacheManifest = [
   },
   {
     "url": "./",
-    "revision": "92f7e6febc3998647b6335d2893988c6"
+    "revision": "a93c60ec77b03a6a31db529de5423805"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"));
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("attestation-deplacement-derogatoire-q4-2020//index.html"));
