@@ -33,7 +33,7 @@ export async function generatePdf (profile, reasons, pdfBase) {
   } = profile
 
   const data = [
-    `Cree le: ${creationDate} a ${creationHour}`,
+    `Cree le: ${datesortie} a ${heuresortie}`,
     `Nom: ${lastname}`,
     `Prenom: ${firstname}`,
     `Naissance: ${birthday} a ${placeofbirth}`,
