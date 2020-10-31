@@ -3,6 +3,7 @@
   "version": "1.0.5",
   "description": "Générateur d'attestation de déplacement dérogatoire'",
   "main": "certificate.js",
+  "homepage": "http://covid19fr.github.io/attestation-deplacement-derogatoire-q4-2020",
   "scripts": {
     "lint": "eslint src/**/*.js",
     "preformat": "prettier --write \"src/**/*.js\"",
@@ -18,6 +19,8 @@
     "build:ci": "cross-env npm run build:simple",
     "postbuild:ci": "cross-env-shell react-snap",
     "build:dev": "cross-env PUBLIC_URL='/' npm run build:simple",
+    "predeploy": "npm run build:simple",
+    "deploy": "gh-pages -d dist",
     "preserve": "npm run build",
     "serve": "serve dist",
     "serve:dist": "serve dist"
