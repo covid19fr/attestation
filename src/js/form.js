@@ -85,7 +85,7 @@ const createReasonField = (reasonData) => {
   }
   const inputReason = createElement('input', inputReasonAttrs)
 
-  const labelAttrs = { innerHTML: reasonData.label, className: 'form-checkbox-label', for: id }
+  const labelAttrs = { innerHTML: reasonData.code, className: 'form-checkbox-label', for: id }
   const label = createElement('label', labelAttrs)
 
   appendToReason([inputReason, label])
