@@ -52,6 +52,10 @@ self.__precacheManifest = [
     "revision": "623cac53a40c141642b22bf50fe14628"
   },
   {
+    "url": "confidentialite.2eee47f4.css",
+    "revision": "213e8197e52aedf203f00ca4d629949e"
+  },
+  {
     "url": "confidentialite.98e11c1c.js",
     "revision": "32cab994b5d56838305461741c5e258a"
   },
@@ -60,8 +64,12 @@ self.__precacheManifest = [
     "revision": "3b9204d22903466b55b34e81a00444bf"
   },
   {
+    "url": "confidentialite.f4e6baeb.js",
+    "revision": "50538208f92ec58699313f95562bafcd"
+  },
+  {
     "url": "confidentialite.html",
-    "revision": "c36d746e98b648a02c39b426d490affe"
+    "revision": "24df961461629ba98839449d1f8b5209"
   },
   {
     "url": "favicon-16x16.a4687270.png",
@@ -73,7 +81,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "8af690d55b5b047fad9517c3bff5adc6"
+    "revision": "18048d7c27b34e231901f3c21c54f7e2"
   },
   {
     "url": "logo_dnum_dark.0fe33c5b.svg",
@@ -84,12 +92,20 @@ self.__precacheManifest = [
     "revision": "3a41bfa41e4671414da29db168c37d66"
   },
   {
+    "url": "main.2eee47f4.css",
+    "revision": "10bf431df81522922e389c86115d2d69"
+  },
+  {
     "url": "main.b65854e3.css",
     "revision": "d5375163f0a8dda79c0d5027d580067f"
   },
   {
     "url": "main.cb5a8467.js",
     "revision": "d50de727434908090a151e391a10905e"
+  },
+  {
+    "url": "main.cc57ec36.js",
+    "revision": "fe8a601bda33649bf4d0467d8935d006"
   },
   {
     "url": "marianne-bold-webfont.1505950c.woff2",
@@ -121,7 +137,7 @@ self.__precacheManifest = [
   },
   {
     "url": "./",
-    "revision": "6e842679d3ec1cfe65e3d432d6c07dce"
+    "revision": "4d856bf0d24b573b11a3f6383ba539b3"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
