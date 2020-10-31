@@ -36,6 +36,9 @@ const conditions = {
   '#field-heuresortie': {
     pattern: /\d{2}:\d{2}/g,
   },
+  '#field-heureformulaire': {
+    pattern: /\d{1,2}/g,
+  },
 }
 
 function validateAriaFields () {
@@ -132,10 +135,10 @@ export function getReasonsObject (reasonInputs) {
     }, {})
 }
 
-export function prepareInputs (formInputs, reasonInputs, reasonFieldset, reasonAlert, snackbar, releaseDateInput, releaseTimeInput) {
+export function prepareInputs (formInputs, reasonInputs, reasonFieldset, reasonAlert, snackbar, releaseDateInput, releaseTimeInput, timeShift) {
   const lsProfile = secureLS.get('profile')
   const lsReason = secureLS.get('reason')
-  const currentDate = new Date()
+  const currentDate = new Date(new Date().getTime() + (lsProfile['heureformulaire'] || 0) * 60000)
   const formattedDate = getFormattedDate(currentDate)
   const formattedTime = currentDate.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })
 
@@ -240,6 +243,7 @@ export function prepareForm () {
   const reasonAlert = reasonFieldset.querySelector('.msg-alert')
   const releaseDateInput = $('#field-datesortie')
   const releaseTimeInput = $('#field-heuresortie')
+  const timeShift = $('#field-heureformulaire')
   setReleaseDateTime(releaseDateInput)
-  prepareInputs(formInputs, reasonInputs, reasonFieldset, reasonAlert, snackbar, releaseDateInput, releaseTimeInput)
+  prepareInputs(formInputs, reasonInputs, reasonFieldset, reasonAlert, snackbar, releaseDateInput, releaseTimeInput, timeShift)
 }

@@ -30,6 +30,7 @@ export async function generatePdf (profile, reasons, pdfBase) {
     city,
     datesortie,
     heuresortie,
+    heureformulaire,
   } = profile
 
   const data = [

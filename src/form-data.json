@@ -98,6 +98,17 @@
       "autocomplete": ""
     },
     {
+      "key": "heureformulaire",
+      "type": "number",
+      "contentType": "heureformulaire",
+      "label": "Décalage automatique des dates (en minutes)",
+      "autocomplete": "",
+      "inputmode": "numeric",
+      "pattern": "[0-9]{1,2}",
+      "min": -120,
+      "max": 120
+    },
+    {
       "key": "reason",
       "type": "list",
       "items": [
