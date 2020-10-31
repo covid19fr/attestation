@@ -146,4 +146,4 @@ self.__precacheManifest = [
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("attestation-deplacement-derogatoire-q4-2020//index.html"));
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("./src/index.html/index.html"));
