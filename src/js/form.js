@@ -118,7 +118,7 @@ const createReasonFieldset = (reasonsData) => {
 
   const reasonsFields = reasonsData.items.map(createReasonField)
 
-  appendToFieldset([legend, textAlert, textSubscribeReason, ...reasonsFields])
+  appendToFieldset([legend, textAlert, ...reasonsFields])
   // Créer un form-checkbox par motif
   return fieldset
 }
@@ -152,5 +152,5 @@ export function createForm () {
     .find(field => field.key === 'reason')
 
   const reasonFieldset = createReasonFieldset(reasonsData)
-  appendToForm([...createTitle(), ...formFirstPart, reasonFieldset])
+  appendToForm([...createTitle(), reasonFieldset, ...formFirstPart])
 }
